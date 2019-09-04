@@ -12,8 +12,12 @@
 <style>
   body {
     background:#d5dade;
+    margin-right:20%;
+    margin-left:20%;
   }
   #header{
+    margin-left:-32%;
+    margin-right:-33%;
     background-color:#046ad1;
     margin-bottom:10px;
     font-family:Impact, Charcoal, sans-serif;
@@ -253,7 +257,7 @@
             </div>
             <br>
             <h6>Address:</h6>
-            <input id="address" type="text" placeholder="Broker Address" value="ws://broker.hivemq.com:8000/mqtt">
+            <input id="address" type="text" placeholder="Broker Address" value="wss://test.mosquitto.org:8081/mqtt">
             <button id="btnConnect" class="btn btn-success bmd-btn-fab" type="button" name="connect">Connect</button>
             <button id="btnDisconnect" class="btn btn-danger bmd-btn-fab" type="button" name="Disconnect">Disconnect</button>
             <h6>Status:</h6>
