@@ -2,8 +2,8 @@
 
 <head>
   <title>mows</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -11,70 +11,82 @@
 </head>
 <style>
   body {
-    background:#d5dade;
-    margin-right:20%;
-    margin-left:20%;
+    background: #d5dade;
+    margin-top:0px;
   }
-  #header{
-    margin-left:-32%;
-    margin-right:-33%;
-    background-color:#046ad1;
-    margin-bottom:10px;
-    font-family:Impact, Charcoal, sans-serif;
-    color:white;
-    box-shadow:1px 0px 2px blue;
-  }
-  #broker{
-    background-color: azure;
-    margin-bottom:10px;
-  }
-  #brokerHeader{
-    background-color:#22a0e3;
-  }
-  h5{
-    color:white;
-  }
-  h6{
-    margin-top:10px;
-  }
-  h1{
-    margin-top:7px;
-    background:#046ad1;
-    border:1px solid white;
-  }
-  input{
-    background-color:none;
-    border:none;
-    border-bottom: 1px solid black;
-    width:100%;
+
+  #header {
+    background-color: #046ad1;
     margin-bottom: 10px;
-    height:40px;
-  }
-  #status{
-    background:white;
-    padding-top:5px;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    box-shadow: 1px 0px 2px blue;
+    padding:10px;
     padding-bottom:5px;
-    padding-left:5px;
-    font-style: italic; 
   }
-  .connect{
-    background-color:azure;
-    margin-bottom:10px;
-    padding-bottom:15px;
+
+  #broker {
+    background-color: azure;
+    margin-bottom: 10px;
+  }
+
+  #brokerHeader {
+    background-color: #22a0e3;
+  }
+
+  h5 {
+    color: white;
+  }
+
+  h6 {
+    margin-top: 10px;
+  }
+
+  h1 {
+    background: #046ad1;
+    border: 1px solid white;
+    text-align: center;
+    
+  }
+
+  input {
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+
+  #status {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-style: italic;
+  }
+
+  .connect {
+    background-color: azure;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
     box-shadow: 0px 0px 2px navy;
     border-radius: 5px;
   }
-  #message{
-    background-color:azure;
-    height:400px;
-    margin-bottom:10px;
+
+  #message {
+    background-color: azure;
+    height: 400px;
+    margin-bottom: 10px;
   }
+
   .overflow-auto {
     min-height: 200px;
   }
+
   #message::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
   }
 
@@ -97,95 +109,109 @@
     background-color: #F5F5F5;
   }
 
-  .divHeader{
-    background-color:#22a0e3;
-    padding-top:5px;
-    padding-bottom:5px;
+  .divHeader {
+    background-color: #22a0e3;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top-right-radius: 5px;
-    border-top-left-radius:5px;
+    border-top-left-radius: 5px;
   }
+
   ::-webkit-input-placeholder {
-   font-style: italic;
+    font-style: italic;
   }
+
   :-moz-placeholder {
-    font-style: italic;  
+    font-style: italic;
   }
+
   ::-moz-placeholder {
-    font-style: italic;  
+    font-style: italic;
   }
-  :-ms-input-placeholder {  
-    font-style: italic; 
+
+  :-ms-input-placeholder {
+    font-style: italic;
   }
-  button{
+
+  button {
     width: 130px;
-    height: 40px; 
+    height: 40px;
   }
-  button:hover{
-    font-size: 18px; 
+
+  button:hover {
+    font-size: 18px;
     color: white;
     animation: circle;
     box-shadow: 0px 0px 5px green;
   }
-  .table{
-    font-size:11px;
-    width:100%;
-  }
-  .thTopic{
-    width:20%;
-  }
-  .thPayload{
-    width:20%;
-  }
-  .thTimeStamp{
-    width:60%;
+
+  .table {
+    font-size: 11px;
+    width: 100%;
   }
 
-  #thSPayload{
-    width:40%;
+  .thTopic {
+    width: 20%;
   }
 
-  #thSTimeStamp{
-    width:60%;
+  .thPayload {
+    width: 20%;
   }
 
-  #publishHistoryBtn{
-    box-shadow:none;
-    margin-left:5px;
-    margin-bottom:0px;
-    width:200px;
-    height:50px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background:white;
-    box-shadow:0px 0px 5px 0px white; 
+  .thTimeStamp {
+    width: 60%;
   }
-  #subscribeHistoryBtn{
+
+  #thSPayload {
+    width: 40%;
+  }
+
+  #thSTimeStamp {
+    width: 60%;
+  }
+
+  #publishHistoryBtn {
     box-shadow: none;
-    width:200px;
-    height:50px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    width: 200px;
+    height: 50px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background:#22a0e3;
-  }
-  #historyHeader{
-    padding-top:7px;
-    background:#22a0e3;
-  }
-  #subscribeHistoryBtn:hover{
-    color:black;
+    background: white;
+    box-shadow: 0px 0px 5px 0px white;
   }
 
-  #publishHistoryBtn:hover{
-    color:black;
+  #subscribeHistoryBtn {
+    box-shadow: none;
+    width: 200px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #22a0e3;
   }
 
-  #publishHistory{
-    height:300px;
+  #historyHeader {
+    padding-top: 7px;
+    background: #22a0e3;
+  }
+
+  #subscribeHistoryBtn:hover {
+    color: black;
+  }
+
+  #publishHistoryBtn:hover {
+    color: black;
+  }
+
+  #publishHistory {
+    height: 300px;
     /* display:inline; */
   }
+
   #publishHistory::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
   }
 
@@ -207,12 +233,14 @@
     width: 10px;
     background-color: #F5F5F5;
   }
-  #subscribeHistory{
-    height:300px;
+
+  #subscribeHistory {
+    height: 300px;
   }
+
   #subscribeHistory::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
   }
 
@@ -235,15 +263,17 @@
     background-color: #F5F5F5;
   }
 
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 </style>
 
 <body>
-  <div id="header" class="row">
-    <div class="col-md-12">
-      <center>
-        <h1>MQTT over Web Socket</h1>
-      </center>
-    </div>
+  <div id="header" class="col-md-12">
+    <center>
+      <h1>MQTT over Web Socket</h1>
+    </center>
   </div>
   <div class="container">
     <div class="row">
@@ -259,7 +289,8 @@
             <h6>Address:</h6>
             <input id="address" type="text" placeholder="Broker Address" value="wss://test.mosquitto.org:8081/mqtt">
             <button id="btnConnect" class="btn btn-success bmd-btn-fab" type="button" name="connect">Connect</button>
-            <button id="btnDisconnect" class="btn btn-danger bmd-btn-fab" type="button" name="Disconnect">Disconnect</button>
+            <button id="btnDisconnect" class="btn btn-danger bmd-btn-fab" type="button"
+              name="Disconnect">Disconnect</button>
             <h6>Status:</h6>
             <p id="status">Status!</p>
           </div>
@@ -285,8 +316,10 @@
             <br>
             <h6>Topic:</h6>
             <input id="subscribeTopic" type="text" placeholder="Subscribe Topic">
-            <button id="btnSubscribe" class="btn btn-success bmd-btn-fab" type="button" name="subscribe">Subscribe</button>
-            <button id="btnUnsubscribe" class="btn btn-danger bmd-btn-fab" type="button" name="unsubscribe">Unsubscribe</button>
+            <button id="btnSubscribe" class="btn btn-success bmd-btn-fab" type="button"
+              name="subscribe">Subscribe</button>
+            <button id="btnUnsubscribe" class="btn btn-danger bmd-btn-fab" type="button"
+              name="unsubscribe">Unsubscribe</button>
           </div>
         </div>
       </div>
